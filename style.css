@@ -1,0 +1,44 @@
+@keyframes buzz {
+    from {
+        transform: translateX(-10pt);
+    } 20% {
+        transform: translateX(10pt);
+    } 50% {
+        transform: translateX(-5pt);
+    } 80% {
+        transform: translateX(3pt);
+    } to {
+        transform: translateX(0pt);
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: scale(10);
+    } to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+input[type=checkbox]#useless {
+    cursor: pointer;
+}
+
+input[type=checkbox].fadein {
+    animation: fadein 3s forwards;
+}
+
+input[type=checkbox].buzz {
+    animation: buzz 300ms forwards linear;
+}
