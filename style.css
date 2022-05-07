@@ -31,7 +31,7 @@ body {
     width: 100vw;
 }
 
-input[type=checkbox]#useless {
+input[type=checkbox]#useful {
     cursor: pointer;
 }
 

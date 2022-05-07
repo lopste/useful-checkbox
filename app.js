@@ -3,9 +3,9 @@ function $(qry) {return document.querySelector(qry)};
 var lastTimeout = null;
 var clicks = 0;
 
-const checkbox = $("#useless");
+const checkbox = $("#useful");
 checkbox.setAttribute("disabled", "");
-
+checkbox.checked = false;
 checkbox.addEventListener("click", () => {
     clicks++;
     if(checkbox.getAttribute("disabled")){return;}
